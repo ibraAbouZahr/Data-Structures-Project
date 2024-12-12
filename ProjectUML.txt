@@ -1,0 +1,121 @@
+Class Diagram:
+
+- Class: Mall
+
+Attributes:
+mallName: String
+listOfShops: ShopLinkedList
+customerQueue: CustomerQueue
+employeeStack: EmployeeStack
+
+- Class: ShopLinkedList
+
+Attributes:
+head: ShopNode
+
+- Class: ShopNode
+
+Attributes:
+shop: Shop
+next: ShopNode
+
+- Class: Shop
+
+Attributes:
+shopID: int
+shopName: String
+productList: ProductLinkedList
+
+- Class: ProductLinkedList
+
+Attributes:
+head: ProductNode
+
+- Class: ProductNode
+
+Attributes:
+product: Product
+next: ProductNode
+
+- Class: Product
+
+Attributes:
+productID: int
+productName: String
+price: double
+
+- Class: CustomerQueue
+
+Attributes:
+front: CustomerNode
+rear: CustomerNode
+
+- Class: CustomerNode
+
+Attributes:
+customer: Customer
+next: CustomerNode
+
+- Class: Customer
+
+Attributes:
+customerID: int
+customerName: String
+shoppingCart: ProductStack
+
+- Class: ProductStack
+
+Attributes:
+top: ProductNode
+
+- Class: EmployeeStack
+
+Attributes:
+top: EmployeeNode
+
+- Class: EmployeeNode
+
+Attributes:
+employee: Employee
+next: EmployeeNode
+
+- Class: Employee
+
+Attributes:
+employeeID: int
+employeeName: String
+jobTitle: String
+
+Explanation:
+
+The Mall class represents the overall mall management system, including a list of shops, a queue of customers, and a stack of employees.
+
+The ShopLinkedList class represents a linked list of shops in the mall.
+
+The ShopNode class represents a node in the linked list of shops, containing a reference to a shop and the next node.
+
+The Shop class represents an individual shop, containing a shop ID, shop name, and a linked list of products.
+
+The ProductLinkedList class represents a linked list of products in a shop.
+
+The ProductNode class represents a node in the linked list of products, containing a reference to a product and the next node.
+
+The Product class represents an individual product, containing a product ID, product name, and price.
+
+The CustomerQueue class represents a queue of customers.
+
+The CustomerNode class represents a node in the customer queue, containing a reference to a customer and the next node.
+
+The Customer class represents an individual customer, containing a customer ID, customer name, and a stack for the shopping cart.
+
+The ProductStack class represents a stack for the shopping cart of a customer.
+
+The EmployeeStack class represents a stack of employees.
+
+The EmployeeNode class represents a node in the employee stack, containing a reference to an employee and the next node.
+
+The Employee class represents an individual employee, containing an employee ID, employee name, and job title.
+
+This UML diagram outlines the relationships and structure of the classes in the Mall Management System, emphasizing the use of custom linked lists, stacks, and queues for various functionalities. Feel free to adapt and expand this diagram based on your specific project requirements.
+
+
