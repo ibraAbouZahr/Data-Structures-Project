@@ -1,0 +1,32 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Build output
+bin/
+target/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Dependency caches
+.gradle/
+node_modules/
+
+# IntelliJ IDEA files
+.idea/
+
+# VS Code files
+.vscode/
+
+# Environment files
+*.env
